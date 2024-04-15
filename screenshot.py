@@ -20,8 +20,11 @@ service = ChromeService(executable_path='/usr/local/bin/chromedriver-linux64/chr
 driver = webdriver.Chrome(service=service, options=options)
 
 # Accessing the webpage
-url = "https://www.sunrise.ch/"  # Hardcoded URL
-driver.get(url)
+url = "https://bitbucket.org/"  # Hardcoded URL
+try:
+    driver.get(url)
+except Exception as e:
+    print(f"Failed to load page {url}: {e}")
 
 # Taking screenshot
 driver.save_screenshot('screen.png')
