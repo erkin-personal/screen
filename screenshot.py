@@ -24,7 +24,7 @@ url = "https://sunrise.net"  # Hardcoded URL
 driver.get(url)
 
 # Taking screenshot
-driver.save_screenshot('/screen/screen.png')
+driver.save_screenshot('screen.png')
 
 # Closing the browser
 driver.quit()
