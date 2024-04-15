@@ -20,7 +20,7 @@ service = ChromeService(executable_path='/usr/local/bin/chromedriver-linux64/chr
 driver = webdriver.Chrome(service=service, options=options)
 
 # Accessing the webpage
-url = "https://www.sunrise.ch/en/home"  # Hardcoded URL
+url = "https://www.sunrise.ch/"  # Hardcoded URL
 driver.get(url)
 
 # Taking screenshot
