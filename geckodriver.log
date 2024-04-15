@@ -1,0 +1,161 @@
+1711719939138	geckodriver	INFO	Listening on 127.0.0.1:35367
+1711719939643	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "38813" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3zl0zm"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=1.02235) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=1.02235) |[1][GFX1-]: glxtest: libEGL missing (t=1.02535) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=1.02235) |[1][GFX1-]: glxtest: libEGL missing (t=1.02535) |[2][GFX1-]: glxtest: GLX extension missing (t=1.03459) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=1.02235) |[1][GFX1-]: glxtest: libEGL missing (t=1.02535) |[2][GFX1-]: glxtest: GLX extension missing (t=1.03459) |[3][GFX1-]: glxtest: libEGL missing (t=1.03956) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=1.02235) |[1][GFX1-]: glxtest: libEGL missing (t=1.02535) |[2][GFX1-]: glxtest: GLX extension missing (t=1.03459) |[3][GFX1-]: glxtest: libEGL missing (t=1.03956) |[4][GFX1-]: No GPUs detected via PCI (t=1.04081) [GFX1-]: No GPUs detected via PCI
+1711719942202	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3zl0zm/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38813/devtools/browser/6f424ab2-fc31-4728-9c58-be729cf488b5
+1711719949565	Marionette	INFO	Listening on port 42941
+1711719949734	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1711719971430	geckodriver	INFO	Listening on 127.0.0.1:57013
+1711719971933	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "55757" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEV487q"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.390682) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.390682) |[1][GFX1-]: glxtest: libEGL missing (t=0.391118) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.390682) |[1][GFX1-]: glxtest: libEGL missing (t=0.391118) |[2][GFX1-]: glxtest: GLX extension missing (t=0.39143) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.390682) |[1][GFX1-]: glxtest: libEGL missing (t=0.391118) |[2][GFX1-]: glxtest: GLX extension missing (t=0.39143) |[3][GFX1-]: glxtest: libEGL missing (t=0.391701) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.390682) |[1][GFX1-]: glxtest: libEGL missing (t=0.391118) |[2][GFX1-]: glxtest: GLX extension missing (t=0.39143) |[3][GFX1-]: glxtest: libEGL missing (t=0.391701) |[4][GFX1-]: No GPUs detected via PCI (t=0.392007) [GFX1-]: No GPUs detected via PCI
+1711719972652	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEV487q/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55757/devtools/browser/ee9ecaa2-2646-467f-9e54-96dbf1637f54
+1711719976296	Marionette	INFO	Listening on port 34567
+1711719976369	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1711719979625	Marionette	INFO	Stopped listening on port 34567
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1711719980422	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1711720055454	geckodriver	INFO	Listening on 127.0.0.1:40743
+1711720055958	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "35801" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilelznTlh"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.381146) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.381146) |[1][GFX1-]: glxtest: libEGL missing (t=0.381627) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.381146) |[1][GFX1-]: glxtest: libEGL missing (t=0.381627) |[2][GFX1-]: glxtest: GLX extension missing (t=0.381923) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.381146) |[1][GFX1-]: glxtest: libEGL missing (t=0.381627) |[2][GFX1-]: glxtest: GLX extension missing (t=0.381923) |[3][GFX1-]: glxtest: libEGL missing (t=0.382181) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.381146) |[1][GFX1-]: glxtest: libEGL missing (t=0.381627) |[2][GFX1-]: glxtest: GLX extension missing (t=0.381923) |[3][GFX1-]: glxtest: libEGL missing (t=0.382181) |[4][GFX1-]: No GPUs detected via PCI (t=0.382432) [GFX1-]: No GPUs detected via PCI
+1711720056602	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelznTlh/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35801/devtools/browser/5490fd48-86cf-46de-90ff-b5c2f08baa2f
+1711720058818	Marionette	INFO	Listening on port 36069
+1711720058885	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1711720061281	Marionette	INFO	Stopped listening on port 36069
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1711720061858	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1711720118794	geckodriver	INFO	Listening on 127.0.0.1:39147
+1711720119298	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "60111" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileAVmbDe"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.477067) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.477067) |[1][GFX1-]: glxtest: libEGL missing (t=0.477631) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.477067) |[1][GFX1-]: glxtest: libEGL missing (t=0.477631) |[2][GFX1-]: glxtest: GLX extension missing (t=0.478186) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.477067) |[1][GFX1-]: glxtest: libEGL missing (t=0.477631) |[2][GFX1-]: glxtest: GLX extension missing (t=0.478186) |[3][GFX1-]: glxtest: libEGL missing (t=0.478603) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.477067) |[1][GFX1-]: glxtest: libEGL missing (t=0.477631) |[2][GFX1-]: glxtest: GLX extension missing (t=0.478186) |[3][GFX1-]: glxtest: libEGL missing (t=0.478603) |[4][GFX1-]: No GPUs detected via PCI (t=0.479009) [GFX1-]: No GPUs detected via PCI
+1711720120487	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAVmbDe/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60111/devtools/browser/498ff009-547c-4c55-9f77-32a505dde465
+1711720126575	Marionette	INFO	Listening on port 42937
+1711720126663	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1711720132680	Marionette	INFO	Stopped listening on port 42937
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1711720134212	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1711720161179	geckodriver	INFO	Listening on 127.0.0.1:33149
+1711720161684	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "45327" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqwOTz3"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.493459) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.493459) |[1][GFX1-]: glxtest: libEGL missing (t=0.494034) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.493459) |[1][GFX1-]: glxtest: libEGL missing (t=0.494034) |[2][GFX1-]: glxtest: GLX extension missing (t=0.494432) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.493459) |[1][GFX1-]: glxtest: libEGL missing (t=0.494034) |[2][GFX1-]: glxtest: GLX extension missing (t=0.494432) |[3][GFX1-]: glxtest: libEGL missing (t=0.494826) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.493459) |[1][GFX1-]: glxtest: libEGL missing (t=0.494034) |[2][GFX1-]: glxtest: GLX extension missing (t=0.494432) |[3][GFX1-]: glxtest: libEGL missing (t=0.494826) |[4][GFX1-]: No GPUs detected via PCI (t=0.495217) [GFX1-]: No GPUs detected via PCI
+1711720162633	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqwOTz3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45327/devtools/browser/27e24468-1f7b-43f3-87d6-02e0b17d2b45
+1711720166413	Marionette	INFO	Listening on port 46019
+1711720166510	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qinshift.com/sb/sitebuilder-js-bundle.js.v6, line 226: unreachable code after return statement
+1711720171374	Marionette	INFO	Stopped listening on port 46019
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1711720172265	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1711720255111	geckodriver	INFO	Listening on 127.0.0.1:49385
+1711720255615	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "44405" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZUHaFT"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.364473) [GFX1-]: glxtest: libpci missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.364473) |[1][GFX1-]: glxtest: libEGL missing (t=0.365034) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.364473) |[1][GFX1-]: glxtest: libEGL missing (t=0.365034) |[2][GFX1-]: glxtest: GLX extension missing (t=0.365436) [GFX1-]: glxtest: GLX extension missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.364473) |[1][GFX1-]: glxtest: libEGL missing (t=0.365034) |[2][GFX1-]: glxtest: GLX extension missing (t=0.365436) |[3][GFX1-]: glxtest: libEGL missing (t=0.365855) [GFX1-]: glxtest: libEGL missing
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: libpci missing (t=0.364473) |[1][GFX1-]: glxtest: libEGL missing (t=0.365034) |[2][GFX1-]: glxtest: GLX extension missing (t=0.365436) |[3][GFX1-]: glxtest: libEGL missing (t=0.365855) |[4][GFX1-]: No GPUs detected via PCI (t=0.366258) [GFX1-]: No GPUs detected via PCI
+1711720256253	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZUHaFT/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:44405/devtools/browser/b4d06d2f-e172-430a-9cec-bc0c6206c0d7
+1711720258500	Marionette	INFO	Listening on port 38791
+1711720258550	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/e9113abe4a4d/d7a242a9c950/launch-03775c46c565.min.js, line 3: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://assets.adobedtm.com/e9113abe4a4d/d7a242a9c950/launch-03775c46c565.min.js, line 3: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://assets.adobedtm.com/e9113abe4a4d/d7a242a9c950/launch-03775c46c565.min.js, line 3: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://assets.adobedtm.com/e9113abe4a4d/d7a242a9c950/launch-03775c46c565.min.js, line 3: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 684: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 684: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 684: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 684: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 235: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 235: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 235: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 235: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 296: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 296: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 296: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 296: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 825: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 825: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 825: WebGL warning: <Create>: WebglAllowWindowsNativeGl:false restricts context creation on this system.
+JavaScript warning: https://www.sunrise.ch/TSPD/08e6636a3cab20007119d06ad0ac87242956e83b92fbb4b0df22550db1943d2fe2d050ee7f8d2628?type=11, line 825: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+1711720268937	Marionette	INFO	Stopped listening on port 38791
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1711720269732	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
