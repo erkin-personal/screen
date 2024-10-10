@@ -16,7 +16,7 @@ options.add_argument('--disable-gpu')  # GPU hardware acceleration isn't necessa
 options.add_argument('--window-size=1920x1080')  # Define window size for screenshots or elements rendering
 
 # Assuming ChromeDriver is in the system's PATH, specify it directly without using ChromeDriverManager
-service = ChromeService(executable_path='/usr/local/bin/chromedriver-linux64/chromedriver')
+service = ChromeService(executable_path='/usr/local/bin/chromedriver')
 driver = webdriver.Chrome(service=service, options=options)
 
 # Accessing the webpage
