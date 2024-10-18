@@ -1,0 +1,8 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  python-app:
+    build: .
+    volumes:
+      - .:/app  # Optional: mounts current directory to /app in container for live updates

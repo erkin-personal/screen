@@ -20,7 +20,7 @@ service = ChromeService(executable_path='/usr/local/bin/chromedriver')
 driver = webdriver.Chrome(service=service, options=options)
 
 # Accessing the webpage
-url = "https://bitbucket.org/"  # Hardcoded URL
+url = "https://atakz.com/"  # Hardcoded URL
 try:
     driver.get(url)
 except Exception as e:
