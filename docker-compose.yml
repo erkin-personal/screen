@@ -3,6 +3,21 @@ version: '3.8'
 
 services:
   python-app:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     volumes:
-      - .:/app  # Optional: mounts current directory to /app in container for live updates
+      - .:/app
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "8000:8000"  # Adjust port as needed
+    healthcheck:
+      test: ["CMD", "python", "-c", "import http.client; conn = http.client.HTTPConnection('localhost:8000'); conn.request('GET', '/health'); response = conn.getresponse(); exit(1) if response.status != 200 else exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+      
